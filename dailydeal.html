@@ -1,0 +1,316 @@
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0px;
+            }
+            .navbar{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(27, 207, 207);
+    position: relative;
+}
+.menu1{
+    flex-basis: 15%;
+    font-style: italic;
+    font-weight: 900;
+    position: relative;
+    animation-name: divanm;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes divanm{
+    0%{
+        color: crimson;
+    }
+    25%{
+        color: black;
+    }
+    50%{
+        color: blue;
+    }
+    75%{
+        color: deeppink;
+    }
+    100%{
+        color: rgb(30, 56, 5);
+    }
+}
+.x2{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: coral;
+    font-weight: 600;
+}
+.x2:after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    background-color: deeppink;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .x2:hover:after{
+  transform: scaleX(1);
+  transform-origin: bottom center;
+  }
+  .menu2{
+    height: 12vh;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: darkgreen;
+    text-align: center;
+}
+.menu2:hover{
+    background-color: black;
+}
+.menu2 h2{
+    color: white;
+}
+.menu2 h5{
+    color: white;
+}
+            .main{
+                width: 100%;
+                height: 120vh;
+                display: flex;
+                justify-content: space-around;
+                position: relative;
+                top: 10vh;
+            }
+            .mainright{
+                width: 40%;
+                height: 100vh;
+                display: flex;
+                justify-content: space-around;
+                flex-direction: column;
+                text-align: center;
+            }
+            .right1{
+                font-size: 40px;
+                font-weight: 900;
+            }
+            .mainright a{
+                color: deeppink;
+                font-weight: 600;
+                font-size: 15px;
+            }
+            .mainright p{
+                font-weight: 300;
+                font-size: 20px;
+            }
+            .mainright p span{
+                color: deeppink;
+                font-weight: 300;
+                font-size: 20px;
+            }
+            .mainright button{
+                width: 50%;
+                height: 5vh;
+                background-color: deeppink;
+                color: white;
+                font-weight: 700;
+                font-size: 25px;
+                position: relative;
+                left: 20%;
+            }
+            .mainright button:hover{
+                width: 50%;
+                height: 5vh;
+                background-color: rgb(102, 20, 255);
+                color: white;
+                font-weight: 700;
+                font-size: 25px;
+                position: relative;
+                left: 20%;
+            }
+            .mainleft{
+                width: 50%;
+                height: 100vh;
+            }
+            .mainleft img{
+                width: 90%;
+                height: 100vh;    
+            }
+            .lostdiv{
+                font-size: 50px;
+                font-weight: 900;
+                text-align: center;
+            }
+            .lostp{
+                font-size: 20px;
+                font-weight: 200;
+                text-align: center;
+            }
+            .pglost{
+                width: 100%;
+                height: 50vh;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+            } 
+            .loright{
+                width: 30%;
+                height: 35vh;
+                position: relative;
+                top: 10vh;
+                left: 2%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            } 
+            .loright div:hover{
+                color: red;
+            } 
+            .loleft{
+                width: 30%;
+                height: 25vh;
+                position: relative;
+                top: 10vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            } 
+            .losttext{
+                width: 100%;
+                height: 12vh;
+                background-color: bisque;
+            }
+            .losttext{
+                font-size: 50px;
+                font-weight: 800;
+                text-align: center;
+                color: deeppink;
+            }
+            .fix{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 3vh;
+   }
+   .footter a{
+    position: relative;
+    top: 3vh;
+   }
+   .footter h6{
+    position: relative;
+    top: 3vh;
+   }
+   .footter{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+     flex-direction: row;
+    justify-content: space-around;
+    background-color: greenyellow;
+    position: relative;
+   }
+   .d3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   }
+   .d4:hover{
+    width: 50px;
+    height: 50px;
+    box-shadow: 5px 5px 5px 5px rgb(95, 2, 72);
+   }
+   .d5:hover{
+    width: 50px;
+    height: 50px;
+    box-shadow: 5px 5px 5px 5px rgb(95, 2, 72);
+   }
+   .d6:hover{
+    width: 50px;
+    height: 50px;
+    box-shadow: 5px 5px 5px 5px rgb(95, 2, 72);
+   }
+        </style>
+    </head>
+    <body>
+        <div class="pg1">
+            <div class="navbar">
+                <div class="menu1"><h1>veggiegrills.</h1></div>
+                <div></div>
+                <a href="menu.html"  class="x2">MENUS</a>
+                <a href="location.html" class="x2">LOCATIONS</a>
+                <a href="catering.html" class="x2">CATERING</a>
+                <a href="reward.html"  class="x2">REWARDS</a>
+                <a href="dailydeal.html"  class="x2">DAILY DEALS</a>
+                <div></div>
+                <div class="menu2"><h2>ORDER NOW</h2><h5>Pick-up or Delivery</h5></div>
+            </div>
+        <div class="main">
+            <div class="mainright">
+                <div class="right1">ENJOY OUR NEW DAILY DEALS</div>
+                <a href="">ONLINE PROMO CODES BELOW</a>
+                <p>MONDAY: use code <span>monday</span> at checkout. an entree is defined </br>as a burger, sandwich, bowl, burrito or salad</p>
+                <p>TUESDAY: no code necessary</p>
+                <p>WEDNESDAY: use code  <span>wednesday</span> at checkout</p>
+                <p>THURSDAY: use code  <span>thursday</span> at checkout. excludes</br> loaded burrito</p>
+                <p>FRIDAY: use code  <span>friday</span> at checkout. an entree is defined</br> as a burger, sandwich, bowl, burrito or salad</p>
+                <button>ORDER NOW</button>
+            </div>
+            <div class="mainleft">
+                <img src="https://veggiegrill.com/wp-content/uploads/2023/02/new-daily-deals.jpg"/>
+            </div>
+        </div>
+        <div class="lostdiv">MORE DETAILS</div>
+        <p class="lostp">Daily deals are not valid with any other offers, discounts, or promotions.</br> 
+            Promotion is available in-store, online, and in-app.</br>
+            Promotion is not valid on third-party delivery services.</br>
+        </p>
+        <div class="pglost">
+            <div class="loright">
+                <div>CONTACT</div>
+                <div>CAREERS</div>
+                <div>GIFT CARDS</div>
+                <div>NUTRITIONAL MENU</div>
+                <div>NUTRITIONAL CALCLATOR</div>
+            </div>
+            <div class="loleft">
+                <div>
+                    <div>
+                        <h5>connect with us</h5>
+                    </div>
+                    <div class="d3">
+                        <img src="fmenu.png" class="d4"/>
+                        <img src="intmenu.png"  class="d5"/>
+                        <img src="twtmenu.png"  class="d6"/>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h5>Download our App</h5>
+                    </div>
+                    <div>
+                        <img src="appmenu.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="losttext">
+        <a class="href">Sign up for upadetes</a>
+       </div>
+       <div class="footter">
+        <img class="fix" src="fixed3.png"/>
+        <a>Terms of use</a>
+        <a>privacy policy</a>
+        <a>CA supply Act</a>
+        <a>Cookie preference</a>
+        <h6>@ vegggiegrills.All rights reserved.</h6>
+       </div>
+    </body>
+</html>

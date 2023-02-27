@@ -1,0 +1,440 @@
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0px;
+            }
+            .navbar{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(27, 207, 207);
+    position: relative;
+}
+.menu1{
+    flex-basis: 15%;
+    font-style: italic;
+    font-weight: 900;
+    position: relative;
+    animation-name: divanm;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes divanm{
+    0%{
+        color: crimson;
+    }
+    25%{
+        color: black;
+    }
+    50%{
+        color: blue;
+    }
+    75%{
+        color: deeppink;
+    }
+    100%{
+        color: rgb(30, 56, 5);
+    }
+}
+.x2{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: coral;
+    font-weight: 600;
+}
+.x2:after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    background-color: deeppink;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .x2:hover:after{
+  transform: scaleX(1);
+  transform-origin: bottom center;
+  }
+  .menu2{
+    height: 12vh;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: darkgreen;
+    text-align: center;
+}
+.menu2:hover{
+    background-color: black;
+}
+.menu2 h2{
+    color: white;
+}
+.menu2 h5{
+    color: white;
+}
+            .ord2{
+                width: 100%;
+                height: 20vh;
+                background-color: gray;
+            }
+            .ord3{
+                text-align: center;
+                color: white;
+                font-size: 50px;
+                font-weight: 900;
+                position: relative;
+                top: 2vh;
+            }
+            .ord4{
+                text-align: center;
+                color: white;
+                font-size: 25px;
+                font-weight: 200;
+                position: relative;
+                top: 2vh;
+            }
+            .location1{
+                width: 100%;
+                height: 100vh;
+            }
+            .location11{
+                height: 20vh;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-content: space-around;
+            }
+            .undline{
+                width: 60%;
+                height: 2vh;
+                border-bottom:5px solid orangered;
+                text-align: center;
+                position: relative;
+                left: 20%;
+            }
+            .location11 div{
+                text-align: center;
+                color: black;
+                font-size: 30px;
+            }
+            .location12{
+                width: 80%;
+                height: 80vh;
+                position: relative;
+                left: 5%;
+                display:flex;
+                flex-direction: column;
+                align-content: space-between;
+            }
+            .location13{
+                width: 100%;
+                height: 30vh;
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .location14{
+                width: 25%;
+                height: 30vh;
+                display: flex;
+                flex-direction: column;
+                align-content: space-between;
+                text-align: center;
+            }
+            .location14 div{
+                font-size: 25px;
+                font-weight: 500;
+            }
+            .location14 p{
+                font-size: 20px;
+                font-weight: 200;
+            }
+            .location14 button{
+                font-size: 25px;
+                font-weight: 500;
+                background-color: orangered;
+                color: white;
+            }
+            .location14 button:hover{
+                font-size: 25px;
+                font-weight: 500;
+                background-color: rgb(16, 17, 105);
+                color: white;
+            }
+            .location15{
+                width: 40%;
+                height: 30vh;
+            }
+            .location15 img{
+                width: 100%;
+                height: 25vh;
+            }
+            .pglost{
+                width: 100%;
+                height: 40vh;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                position: relative;
+                bottom: 2ovh;
+
+            } 
+            .loright{
+                width: 30%;
+                height: 35vh;
+                position: relative;
+                left: 2%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            } 
+            .loright div:hover{
+                color: red;
+            } 
+            .loleft{
+                width: 30%;
+                height: 25vh;
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            } 
+            .losttext{
+                width: 100%;
+                height: 12vh;
+                background-color: bisque;
+            }
+            .losttext{
+                font-size: 50px;
+                font-weight: 800;
+                text-align: center;
+                color: deeppink;
+            }
+            .fix{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 3vh;
+   }
+   .footter a{
+    position: relative;
+    top: 3vh;
+   }
+   .footter h6{
+    position: relative;
+    top: 3vh;
+   }
+   .footter{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+     flex-direction: row;
+    justify-content: space-around;
+    background-color: greenyellow;
+    position: relative;
+   }
+   .d3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   }
+   .d4:hover{
+    width: 50px;
+    height: 50px;
+    box-shadow: 5px 5px 5px 5px rgb(95, 2, 72);
+   }
+   .d5:hover{
+    width: 50px;
+    height: 50px;
+    box-shadow: 5px 5px 5px 5px rgb(95, 2, 72);
+   }
+   .d6:hover{
+    width: 50px;
+    height: 50px;
+    box-shadow: 5px 5px 5px 5px rgb(95, 2, 72);
+   }
+        </style>
+    </head>
+    <body>
+        <div class="pg1">
+            <div class="navbar">
+                <div class="menu1"><h1>veggiegrills.</h1></div>
+                <div></div>
+                <a href="menu.html"  class="x2">MENUS</a>
+                <a href="location.html" class="x2">LOCATIONS</a>
+                <a href="catering.html" class="x2">CATERING</a>
+                <a href="reward.html"  class="x2">REWARDS</a>
+                <a href="dailydeal.html"  class="x2">DAILY DEALS</a>
+                <div></div>
+                <div class="menu2"><h2>ORDER NOW</h2><h5>Pick-up or Delivery</h5></div>
+            </div>
+        <div class="ord2">
+            <div class="ord3">VEGGIE GRILL LOCATIONS</div>
+            <div class="ord4">Make the world a better place, one visit at a time.</div>
+        </div>
+        <div class="location1">
+            <div class="location11">
+                <div>CALIFORNIA</div>
+                <div class="undline"></div>
+            </div>
+            <div class="location12">
+                <div class="location13">
+                    <div class="location14">
+                        <div>Carlsbad</div>
+                        <p>965 Palomar Airport Rd., #100</br>Carlsbad, CA 92011</br>(760)-504 430</p>
+                        <button>VIEW DETAILES</button>
+                    </div>
+                    <div class="location15">
+                        <img src="https://veggiegrill.com/wp-content/uploads/2021/01/VeggieGrill_TolucaLake_Jan21_20-0120_ret.jpg"/>   
+                      
+                    </div>
+                </div>
+                <div class="location13">
+                    <div class="location14">
+                        <div>Corte Madera</div>
+                        <p>147 Corte Madera Town Center</br>Corte Madera, CA 94925</br>(764)-564 400</p>
+                        <button>VIEW DETAILES</button>
+                    </div>
+                    <div class="location15">
+                        <img src="https://veggiegrill.com/wp-content/uploads/2020/12/Santana-Row-Nov-2012-1536x1027.jpg"/>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="location1">
+            <div class="location11">
+                <div>MASSACHUSETTS</div>
+                <div class="undline"></div>
+            </div>
+            <div class="location12">
+                <div class="location13">
+                    <div class="location14">
+                        <div>Harvard Square</div>
+                        <p>965 demart Airport Rd., #800</br>Carlsbad, CA 92011</br>(650)-464 900</p>
+                        <button>VIEW DETAILES</button>
+                    </div>
+                    <div class="location15">
+                        <img src="https://veggiegrill.com/wp-content/uploads/2021/01/20191011-Storrer-Veggie-Grill-262-1536x1024.jpg"/>   
+                    </div>
+                </div>
+                <div class="location13">
+                    <div class="location14">
+                        <div>Toluca Lake</div>
+                        <p>4300 Riverside Drive</br>Burbank, CA 91505</br>
+                            (818) 588-4338</p>
+                        <button>VIEW DETAILES</button>
+                    </div>
+                    <div class="location15">
+                        <img src="https://veggiegrill.com/wp-content/uploads/2020/12/downtown-portland.jpeg"/>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="location1">
+            <div class="location11">
+                <div>NEW YORK</div>
+                <div class="undline"></div>
+            </div>
+            <div class="location12">
+                <div class="location13">
+                    <div class="location14">
+                        <div>Flatiron</div>
+                        <p>12 W 23 Street</br>New York, NY 10010</br>(320) 345 232</p>
+                        <button>VIEW DETAILES</button>
+                    </div>
+                    <div class="location15">
+                        <img src="https://veggiegrill.com/wp-content/uploads/2021/01/VeggieGrill4.V2-1536x889.jpg"/>   
+                    </div>
+                </div>
+                <div class="location13">
+                    <div class="location14">
+                        <div>Second Avenue</div>
+                        <p>1004 2nd Ave</br>new york, CA 92011</br>022(917) 451-8970</p>
+                        <button>VIEW DETAILES</button>
+                    </div>
+                    <div class="location15">
+                        <img src="https://veggiegrill.com/wp-content/uploads/2022/12/Veggie-Grill_2nd-Avenue_Restaurant_Exterior-1536x944.jpeg"/>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="location1">
+            <div class="location11">
+                <div>WASHINGTON</div>
+                <div class="undline"></div>
+            </div>
+            <div class="location12">
+                <div class="location13">
+                    <div class="location14">
+                        <div>Downtown Seattle</div>
+                        <p>1427 Fourth Avenue</br>Long Beach, CA 90803</br>(818)-54 630</p>
+                        <button>VIEW DETAILES</button>
+                    </div>
+                    <div class="location15">
+                        <img src="https://veggiegrill.com/wp-content/uploads/2020/12/Westlake-village.jpeg"/>   
+                    </div>
+                </div>
+                <div class="location13">
+                    <div class="location14">
+                        <div> Marketplace Long Beach</div>
+                        <p>965   Marketplace Long BeachRd., #100</br>Carlsbad, CA 92011</br>(123)211 2322</p>
+                        <button>VIEW DETAILES</button>
+                    </div>
+                    <div class="location15">
+                        <img src="https://veggiegrill.com/wp-content/uploads/2020/12/VG-102-of-125-1536x1024.jpg"/>   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pglost">
+            <div class="loright">
+                <div>CONTACT</div>
+                <div>CAREERS</div>
+                <div>GIFT CARDS</div>
+                <div>NUTRITIONAL MENU</div>
+                <div>NUTRITIONAL CALCLATOR</div>
+            </div>
+            <div class="loleft">
+                <div>
+                    <div>
+                        <h5>connect with us</h5>
+                    </div>
+                    <div class="d3">
+                        <img src="fmenu.png" class="d4"/>
+                        <img src="intmenu.png"  class="d5"/>
+                        <img src="twtmenu.png"  class="d6"/>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h5>Download our App</h5>
+                    </div>
+                    <div>
+                        <img src="appmenu.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="losttext">
+        <a class="href">Sign up for upadetes</a>
+       </div>
+       <div class="footter">
+        <img class="fix" src="fixed3.png"/>
+        <a>Terms of use</a>
+        <a>privacy policy</a>
+        <a>CA supply Act</a>
+        <a>Cookie preference</a>
+        <h6>@ vegggiegrills.All rights reserved.</h6>
+       </div>
+  
+    </body>
+</html>

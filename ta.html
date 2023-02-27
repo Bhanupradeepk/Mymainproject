@@ -1,0 +1,296 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            *{
+                margin: 0px;
+            }
+            body{
+                background-color: chocolate;
+            }
+            .pg1{
+                background-image: url("https://thumbs.dreamstime.com/z/restaurant-table-12552100.jpg");
+                width: 100%;
+                height: 100vh;
+                background: cover;
+            }
+            .pg12 img{
+                width: 150px;
+                height: 100vh;
+                position: absolute;
+                top: 0vh;
+            }
+            .pg13{
+                color: blue;
+                font-size: 25px;
+                position: relative;
+                text-align: center;
+                top: 220px;
+            }
+            .pg1 h1{
+                color: black;
+                position: relative;
+                text-align: center;
+                font-size: 40px;
+                top: 200px;
+            }
+          
+            .pg3{
+                width: 100%;
+                height: 100vh;
+                background-color: rgb(102, 6, 62);
+            }
+            .pg3{
+    width: 100%;
+    height: 55vh;
+    background-color: rgb(150, 165, 11);
+    position: relative;
+    top: 30vh;
+}
+.pg30{
+    width: 100%;
+    height: 7vh;
+    background-color: skyblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 2%;
+}
+.pg30 h2{
+    color: white;
+}
+.pg30:hover h2{
+    color: crimson;
+}
+.pg31{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: white;
+}
+.a{
+    color: deeppink;
+    padding-top: 1.2vh;
+    padding-left: 27%;
+}
+.a:hover{
+    transform: rotate(360deg);
+}
+.a{
+    transition: widtg 1s, height 1s, transform 1s;
+}
+.b{
+    padding-top: 1.2vh;
+    padding-left: 24%;
+    color: red;
+}
+.b:hover{
+    transform: rotate(360deg);
+}
+.b{
+    transition: widtg 1s, height 1s, transform 1s;
+}
+.c{
+    padding-top: 1vh;
+    padding-left: 25%;
+    color: rgb(0, 140, 255);
+}
+.c:hover{
+    transform: rotate(360deg);
+}
+.c{
+    transition: widtg 1s, height 1s, transform 1s;
+}
+.d{
+    padding-top: 1vh;
+    padding-left: 28%;
+    color: blue;
+}
+.d:hover{
+    transform: rotate(360deg);
+}
+.d{
+    transition: widtg 1s, height 1s, transform 1s;
+}
+.e{
+    padding-top: 1vh;
+    padding-left: 25%;
+    color: rgb(0, 102, 255);
+}
+.e:hover{
+    transform: rotate(360deg);
+}
+.e{
+    transition: widtg 1s, height 1s, transform 1s;
+}
+
+.pg32{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 30px;
+    color: white;
+}
+.pg32:hover h2{
+    color: crimson;
+}
+.pg102:hover div{
+    color: green;
+}
+.pg33{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    top: 2vh;
+    color: white;
+}
+.pg33:hover div{
+    color: green;
+}
+.pg33  img{
+    width: 250px;
+    height: 25px;
+}
+.pg4{
+    width: 100%;
+    height: 100vh;
+    background-color: chocolate;
+}
+.pg41{
+    width: 40%;
+    height: 50vh;
+    background:linear-gradient(rgba(221, 236, 8, 0.7),rgba(124, 8, 80, 0.7),rgba(3, 61, 23, 0.7),rgba(31, 85, 167, 0.7));
+    position: relative;
+    top: 40vh;
+    left: 30%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    transition: 0.5s;
+}
+.pg41:hover{
+    box-shadow: 15px 15px 65px 65px cyan;
+    width: 45%;
+    height: 55vh;
+    transition: 0.2;
+}
+.pg41 button{
+    width: 40%;
+    height: 5vh;
+    background-color: darkgreen;
+    border-radius: 10%;
+    font-size: 20px;
+    font-style: italic;
+    color: black;
+}
+label{
+    font-size: 20px;
+    font-style: italic;
+    color: black;
+}
+input{
+    width: 40%;
+    height: 5vh;
+    background-color: darkgreen;
+    border-radius: 5%;
+    font-size: 20px;
+    font-style: italic;
+}
+.pg42{
+    font-style: italic;
+    color: deeppink;
+    font-size: 40px;
+}
+.new{
+
+}
+        </style>
+    </head>
+    <body>
+        <div class="pg1">
+            <div class="pg11"></div>
+            <h1>WELCOME TO VEGGIEGRILLS</h1>
+            <div class="pg13">Our provides Restaurent 100% quality&teasty food</div>
+            <div class="new">Fast delivery is available</div>
+            <div class="pg12"><img src="orderfoodimg.png"></div>
+        </div>
+        
+        <div class="pg4">
+            <div class="pg41">
+                <label>Enter Table Number:
+                    <input type="Text" placeholder=""/>
+                </label></br>
+                <label>A/C OR non A/C:
+                    <input type="date"/>
+                </label></br>
+                <label>Your Ph no:
+                    <input type="text" placeholer="Enter ph no"/>
+                </label></br>
+                <label>To Pay Money:
+                <button>online payment</button>
+              
+            </label></br>
+            <div>After recieving pay money is also Available</div>
+            <div class="pg42">THANK YOU</div>
+            </div>
+        </div>
+        <div class="loster">
+         <div class="pg3">
+            <div class="pg30">
+                <h2>FOLLOW US</h2>
+                <div class="pg31"><div><i class="a fa-brands fa-instagram"></i></div></div>
+                <div class="pg31"><i class="b fa-brands fa-youtube"></i><div></div></div>
+                <div class="pg31"><i class="c fa-brands fa-twitter"></i><div></div></div>
+                <div class="pg31"><i class="d fa-brands fa-facebook-f"></i><div></div></div>
+                <div class="pg31"><i class="e fa-brands fa-telegram"></i><div></div></div>
+            </div>
+            <div class="pg32">
+                <div>
+                    <h2>About</h2>
+                        <div>Careers</div>
+                        <div>Blogs</div>
+                        <div>About cision</div>
+                        <div>Careers</div>
+                        <div>Accesibility Statement</div>
+                        <div>COVID-19 RESOURCES</div>
+                </div>
+                <div>
+                    <h2>Contact Us</h2>
+                        <div>location of our Restaurent</br>
+                            is: Near Hindhu bangla,</br>
+                            Cross Road,Repalle
+                        </div>
+                        <div>9704632376</div>
+                        <div>9603393060</div>
+                        <div>BHANUPRADDEP10@GAMIL.COM</div>
+                </div>
+                <div>
+                    <h2>My Services</h2>
+                
+                        <div>Group Order</div>
+                        <div>GOOD quality Food</div>
+                        <div>Fast Delivery</div>
+                        <div>Free Delivery</div>
+                </div>
+                <div>
+                    <h2>Top Cuisines</h2>
+                        <div>Chinese</div>
+                        <div>Italian</div>
+                        <div>South Indian</div>
+                        <div>Bengali</div>
+                        <div>Mexican</div>
+                </div>
+            </div>
+            <hr>
+            <div class="pg33">
+                <div><img src="pay.png"></div>
+                <div>Terms and conditions</div>
+                <div>Privacy policy</div>
+                <div>Cookie policy</div>
+                <div>Copyright @ veggiegrill. All Rights Reserved.</div>
+            </div>
+        </div>
+       </div>
+    </body>
+</html>

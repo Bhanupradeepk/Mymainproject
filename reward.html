@@ -1,0 +1,421 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <style>
+            *{
+                margin: 0px;
+            }
+            .navbar{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(27, 207, 207);
+    position: relative;
+}
+.menu1{
+    flex-basis: 15%;
+    font-style: italic;
+    font-weight: 900;
+    position: relative;
+    animation-name: divanm;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes divanm{
+    0%{
+        color: crimson;
+    }
+    25%{
+        color: black;
+    }
+    50%{
+        color: blue;
+    }
+    75%{
+        color: deeppink;
+    }
+    100%{
+        color: rgb(30, 56, 5);
+    }
+}
+.x2{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: coral;
+    font-weight: 600;
+}
+.x2:after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    background-color: deeppink;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .x2:hover:after{
+  transform: scaleX(1);
+  transform-origin: bottom center;
+  }
+  .menu2{
+    height: 12vh;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: darkgreen;
+    text-align: center;
+}
+.menu2:hover{
+    background-color: black;
+}
+.menu2 h2{
+    color: white;
+}
+.menu2 h5{
+    color: white;
+}
+.dotcon{
+    position: absolute;
+    width:80%;
+    bottom: 10vh;
+    left: 10%;
+    justify-content: center;
+    display: flex;
+   }
+            .background{
+                width: 100%;
+                height: 90vh;
+                background-image: url(https://veggiegrill.com/wp-content/uploads/2022/04/rewards-header.jpg);
+                background-size: cover;
+            }
+            .headdiv1 div{
+                width: 50%;
+                height: 50vh;
+                font-size: 70px;
+                font-weight: 900;
+                line-height: 100px;
+                background-color: coral;
+                color: rgb(12, 99, 133);
+                text-align: center;
+                position: relative;
+                left: 10%;
+                top: 20vh;
+            }
+            .headdiv1{
+                width: 100%;
+                height: 35vh;
+                position: relative;
+                top: 30vh;
+            }
+            .orderpage{
+                width: 100%;
+                height: 70vh;
+                display: flex;
+                position: relative;
+                top: 10vh;
+            }
+            .ordright{
+                width: 35%;
+                height: 60vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+            .ordright div{
+                text-align: center;
+                font-size: 50px;
+                font-weight: 900;
+                color: rgb(108, 109, 106);
+            }
+            .ordright p{
+                text-align: center;
+                font-size: 20px;
+            }
+            .ordright img{
+                text-align: center;
+                width: 60%;
+                height: 7vh;
+                position: relative;
+                left: 5%;
+            }
+            .handdiv{
+                width: 60%;
+            }
+            .handdiv img{
+                width: 100%;
+                height: 60vh;
+            }
+            .finaldiv{
+                background-color: rgb(105, 103, 98);
+                width: 95%;
+                height: 80vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                position: relative;
+                left: 2.5%;
+                top: 3vh;
+            }
+            .innerfinal{
+                width: 90%;
+                height: 5vh;
+                background-color: rgb(27, 134, 63);
+                position: relative;
+                left: 5%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .pglost{
+                width: 100%;
+                height: 50vh;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+            } 
+            .loright{
+                width: 30%;
+                height: 35vh;
+                position: relative;
+                top: 10vh;
+                left: 2%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            } 
+            .loright div:hover{
+                color: red;
+            } 
+            .loleft{
+                width: 30%;
+                height: 25vh;
+                position: relative;
+                top: 10vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            } 
+            .losttext{
+                width: 100%;
+                height: 12vh;
+                background-color: bisque;
+            }
+            .losttext{
+                font-size: 50px;
+                font-weight: 800;
+                text-align: center;
+                color: deeppink;
+            }
+            .fix{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 3vh;
+   }
+   .footter a{
+    position: relative;
+    top: 3vh;
+   }
+   .footter h6{
+    position: relative;
+    top: 3vh;
+   }
+   .footter{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+     flex-direction: row;
+    justify-content: space-around;
+    background-color: greenyellow;
+    position: relative;
+   }
+   .innerfinal i{
+    position: relative;
+    top: 0.5vh;
+   }
+   .d3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   }
+   .d4:hover{
+    width: 50px;
+    height: 50px;
+    box-shadow: 5px 5px 5px 5px rgb(95, 2, 72);
+   }
+   .d5:hover{
+    width: 50px;
+    height: 50px;
+    box-shadow: 5px 5px 5px 5px rgb(95, 2, 72);
+   }
+   .d6:hover{
+    width: 50px;
+    height: 50px;
+    box-shadow: 5px 5px 5px 5px rgb(95, 2, 72);
+   }
+.ls{
+   width: 90%;
+    height: 5vh;
+    background-color: rgb(27, 100, 134);
+    text-align: center;
+    position: relative;
+    left: 5%;
+    display: none;
+}
+.innerfinal div{
+    position: relative;
+    top: 1vh;
+}
+.innerfinal i{
+    position: relative;
+    top: 0.5vh;
+    right: 5px;
+}
+.innerfinal i:hover{
+    position: relative;
+    top: 0.5vh;
+    right: 5px;
+    font-size: 20px;
+    color: red;
+}
+        </style>
+         </head>
+        <body>
+            <div class="pg1">
+                <div class="navbar">
+                    <div class="menu1"><h1>veggiegrills.</h1></div>
+                    <div></div>
+                    <a href="menu.html"  class="x2">MENUS</a>
+                    <a href="location.html" class="x2">LOCATIONS</a>
+                    <a href="catering.html" class="x2">CATERING</a>
+                    <a href="reward.html"  class="x2">REWARDS</a>
+                    <a href="dailydeal.html"  class="x2">DAILY DEALS</a>
+                    <div></div>
+                    <div class="menu2"><h2>ORDER NOW</h2><h5>Pick-up or Delivery</h5></div>
+                </div>
+        <div class="background">
+            <div class="headdiv1"><div>DOWNLOAD THE APP GET FREE ENTREE.</div></div>
+        </div>
+        <div class="orderpage">
+            <div class="ordright">
+                <div>VG REWARDS</div>
+                <p>Thank you for helping us change food culture for the better! Download our app at the App Store or Google Play. Join to earn credits toward free Veggie Grill dishes and other exclusive member offers.</p>
+                <img src="appmenu.png"/>
+            </div>
+            <div class="handdiv">
+                <img src="https://veggiegrill.com/wp-content/uploads/2022/04/rewards_phonehands.jpg"/>
+            </div>
+        </div>
+        <div class="finaldiv">
+            <div >
+                <div class="innerfinal"> 
+                    <div>How do I get the app?</div>
+                
+                <div><i  onclick="fun7(this,'ls')" class="fa-solid fa-plus"></i></div>
+            </div>
+            <div class="ls" id="ls">Download from iTunes App Store or Google Play Store.</div>
+            </div>
+           
+            <div >
+                <div class="innerfinal"> 
+                    <div>Can I still use my Veggie Grill Android app?</div>
+                
+                <div><i onclick="fun7(this,'ls1')" class="fa-solid fa-plus"></i></div>
+            </div>
+            <div class="ls" id="ls1">Yes! Just make sure you’re on version 2.0.3 or later.</div>
+         </div>
+            <div >
+                <div class="innerfinal"> 
+                    <div>Are nutritionals available in the app?</div>
+                
+                <div><i  onclick="fun7(this,'ls2')" class="fa-solid fa-plus"></i></div>
+            </div>
+            <div class="ls" id="ls2">Yes, you can access our nutrition portal in the menu.</div>
+        </div>
+            <div >
+                <div class="innerfinal"> 
+                    <div>Why does the Veggie Grill app want to send me notifications?</div>                
+                <div><i  onclick="fun7(this,'ls3')" class="fa-solid fa-plus"></i></div>
+            </div>
+            <div class="ls" id="ls3">The permission is required to uniquely identify the devices. </div>
+            </div>
+            <div >
+                <div class="innerfinal"> 
+                    <div>I have the old Veggie Grill iOS app - can I still use it?</div>
+                
+                <div><i  onclick="fun7(this,'ls4')" class="fa-solid fa-plus"></i></div>
+            </div>
+            <div class="ls" id="ls4">Earn from the app’s home screen and scan your QR code at the register.</div>
+            </div>
+        </div>
+        <div class="pglost">
+            <div class="loright">
+                <div>CONTACT</div>
+                <div>CAREERS</div>
+                <div>GIFT CARDS</div>
+                <div>NUTRITIONAL MENU</div>
+                <div>NUTRITIONAL CALCLATOR</div>
+            </div>
+            <div class="loleft">
+                <div>
+                    <div>
+                        <h5>connect with us</h5>
+                    </div>
+                    <div class="d3">
+                        <img src="fmenu.png" class="d4"/>
+                        <img src="intmenu.png"  class="d5"/>
+                        <img src="twtmenu.png"  class="d6"/>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h5>Download our App</h5>
+                    </div>
+                    <div>
+                        <img src="appmenu.png"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="losttext">
+        <a class="href">Sign up for upadetes</a>
+       </div>
+       <div class="footter">
+        <img class="fix" src="fixed3.png"/>
+        <a>Terms of use</a>
+        <a>privacy policy</a>
+        <a>CA supply Act</a>
+        <a>Cookie preference</a>
+        <h6>@ vegggiegrills.All rights reserved.</h6>
+       </div>
+       <script>
+        var f=0
+        function fun7(ar,ar1){
+           
+            e=document.getElementById(ar1)
+            if(f==0)
+            {
+                ar.className="fa-solid fa-minus"
+                e.style.display="block"
+                f=1
+            }
+            else{
+                ar.className="fa-solid fa-plus"
+                e.style.display="none"
+                f=0
+            }
+        }
+      </script>
+        </body>
+   
+</html>
